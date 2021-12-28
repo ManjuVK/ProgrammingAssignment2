@@ -104,7 +104,7 @@ In order to complete this assignment, you must do the following:
 
 This assignment will be graded via peer assessment.
 
-### Solution
+### Solution 1
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
   set <- function(y) {
@@ -123,8 +123,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   if (!is.null(m)) {
-
-          return(m)
+        return(m)
   }
   data <- x$get()
   m <- solve(data, ...)
